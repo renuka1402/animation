@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./onlinecouse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+    margin: 0px;
+    padding: 0px;
+  
+background-image: url('./poha.jpg');
+}
+#firstlogo img{
+  height: 200px;
+  width: 300px;
+  padding-top: 200px;
+  margin-left: 350px;
+
+
+  
+
+  
+}
+#firstlogo
+{
+  display: flex;
+  justify-content: center;
+
+
+padding-bottom: 500px;
+  background-color: black;
+}
+#logo
+{
+
+  display: none;
+}
+
+#nav {
+  display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    
+  
+
+  
+}
+img{
+   width: 170px;
+   height: 80px;
+   margin-right: 450px;
+ 
+   
+
+}
+
+#nav span a{
+    text-decoration: none;
+    color: rgb(134, 126, 121);
+    margin: 10px;
+    font-size: 20px;
+    
+
+}
+#nav span{
+    
+  margin-top: 45px;
+    
+}
+.down{
+    width: 120px;
+    height: 45px;
+  
+  margin-top: 30px;
+    border: 1px solid rgb(106, 101, 101); 
+    background-color:   rgb(104, 18, 3);
+    margin-left:80px ;
+    border-radius: 7px;
+    
+
+}
+ a  {
+    color: rgb(243, 237, 236);
+   list-style: none;
+   text-decoration: none;
+   padding-bottom: 10px;
+
+    
+ }
+.down:hover{
+    background-color: rgb(12, 4, 1);
+    color: white;
+}
+.frant{
+  color: rgb(200, 196, 196);
+  margin-top: 100px;
+  margin-left: 200px;
+  animation : ani 2s cubic-bezier(0.075, 0.82, 0.165, 1) reverse;
+ 
+}
+@keyframes ani{
+  0%{
+    opacity: 0.4;
+    transform:  scale(1);
+    filter: blur(50);
+    margin-left: 200px;
+  }
+  100%{
+    opacity: 0;
+    margin-left: -200px;
+  }
+}
+.frant span{
+  font-size: 70px;
+  
+  font-family:Arial, Helvetica, sans-serif;
+}
+.form{
+  border: 1px solid black;
+ 
+  margin-top: 100px;
+  margin-left: 150px;
+
+
+  box-shadow: 5px 5px 5px 5px rgb(23, 22, 22); 
+
+  backdrop-filter: blur(40px) ;
+  animation : ani 2s  cubic-bezier(0.6, -0.28, 0.735, 0.045) reverse;
+ 
+}
+@keyframes ani{
+  0%{
+    opacity: 0.3;
+    transform:  scale(1);
+    filter: blur(50);
+    margin-left: 200px;
+  }
+  100%{
+    opacity: 0;
+    margin-left: -100px;
+  }
+  
+}
+#emaill{
+    
+  width: 200px;
+  height: 45px;
+  margin: 40px;
+  color: white;
+  background-color: rgb(175, 170, 162);
+  border-radius: 7px;
+  border: 2px solid rgba(80, 3, 3, 0.86);
+  background: transparent;
+}
+
+#password{
+  
+width: 200px;
+height: 45px;
+margin: 40px;
+background-color: rgb(175, 170, 162);
+border-radius: 7px;
+border: 2px solid rgba(80, 3, 3, 0.86);
+background: transparent;
+color: white;
+}
+#text{
+  
+width: 200px;
+height: 45px;
+margin-left: 150px;
+margin: 40px;
+border-radius: 7px;
+color: white;
+
+background-color: rgb(249, 246, 241);
+border: 2px solid rgba(95, 4, 4, 0.797);
+background: transparent;
+}
+#button{
+  margin-top: 40px;
+width: 350px;
+height: 50px;
+color: azure;
+background-color: rgb(104, 18, 3);
+border-radius: 7px;
+color: white;
+
+
+}
+input::placeholder{
+  color: rgb(219, 206, 206);
+}
+
+
+
+</style>
+<body onload="run()">
+<div class="fade">
+  <!---- <div id="firstlogo">
+        
+        <img src="./ds.jpg">
+      </div> */
+    
+      
+    <div class="logo">
+        -->
+    
+        <div id="nav">
+             
+            <img src="sooo.jpg">
+            <span><a href="#">Solutions</a></span>
+                 <span><a href="#">Vision</a></span>
+                  <span><a href="#">Programs</a></span>
+                   <span><a href="#">Blog</a></span>
+                   
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i  class="fa fa-user" style="font-size:20px ; color: rgb(243, 11, 11);color: orangered; "  ></i></span>
+   
+                    <span><a href="#">LogIn</a></span>
+             
+                     <a href="#" class="down"><h4>&nbsp;&nbsp;&nbsp;&nbsp;Get Started</h4></a>
+             
+                </div>
+                
+                <div class="frant">
+                    <span >The New Standard<br> in Data Analysis</span>
+                    <p>Become job-ready with a globally recognized data Analysis  Course<br> that is designed to train you on all three <br>aspects of data Analysis .</p>
+                </div>
+                <div class="form">
+                    <form onsubmit="return validation()">
+               <div id="tt" style="display: flex;">
+
+                 
+                        <div id="errorname"  style="color: rgb(251, 8, 8); display: flex; font-size: 40px;"></div>
+                  <label for="text"style="font-size: 15px;"></label>
+      
+                   <input id="text" type="text" placeholder="USERNAME">
+                   
+                   <div id="errorusername"  style="color: rgba(250, 6, 14, 0.942);font-size: 20px;"></div>
+                 <label for="emaill" style="font-size:15px "> </label>
+    
+                <input id="emaill" type="emaill" placeholder="EMAILL">
+
+
+                <div id="errorpassword"  style="color: rgb(250, 8, 8);"></div>
+
+                     <label for="password"style="font-size: 15px; "></label>
+     
+                     <input id="password" type="password" placeholder="PASSWORD">
+
+                 <input type="submit" id="button" value="GET STARTED.." >
+                </form>
+            </div>
+                </div>
+
+            </div>
+        </div>
+
+                <script src="./onlinecouse.js"></script>
+       
+</body>
+</html>
