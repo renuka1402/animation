@@ -7,6 +7,7 @@ function run()
         document.getElementById('firstlogo').style.display="none";
         document.getElementById('logo').style.display="block";
 
+        
     }
 }
 function validation(){
